@@ -356,7 +356,7 @@
                                                 <color key="strokeColor" red="0.92453919569999998" green="0.14780991369999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Instrument1">
+                                                <fragment content="Piano">
                                                     <attributes>
                                                         <font key="NSFont" size="20" name="Copperplate-Bold"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -381,7 +381,7 @@
                                                 <color key="strokeColor" red="0.92453919569999998" green="0.14780991369999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Instrument2">
+                                                <fragment content="Synth 1">
                                                     <attributes>
                                                         <font key="NSFont" size="20" name="Copperplate-Bold"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -407,7 +407,7 @@
                                                 <color key="strokeColor" red="0.92453919569999998" green="0.14780991369999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Instrument3">
+                                                <fragment content="Synth 2">
                                                     <attributes>
                                                         <font key="NSFont" size="20" name="Copperplate-Bold"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>

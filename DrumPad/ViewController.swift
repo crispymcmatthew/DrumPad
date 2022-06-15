@@ -38,6 +38,12 @@ class ViewController: UIViewController {
             playNote("B3")
         case 11:
             playNote("C4")
+        case 12:
+            selectedInstrument = "grandPiano"
+        case 13:
+            selectedInstrument = "articNoiseLead"
+        case 14:
+            selectedInstrument = "urbanGrunge"
         case 15:
             if let _ = drumPlayer {
                 drumPlayer.stop()
