@@ -13,6 +13,7 @@
 		CE84F5F0285A07F20077DCB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84F5EE285A07F20077DCB9 /* Main.storyboard */; };
 		CE84F5F2285A07F60077DCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE84F5F1285A07F60077DCB9 /* Assets.xcassets */; };
 		CE84F5F5285A07F60077DCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84F5F3285A07F60077DCB9 /* LaunchScreen.storyboard */; };
+		CEA6BCBD285A102C00261934 /* mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEA6BCBC285A102C00261934 /* mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CE84F5F1285A07F60077DCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE84F5F4285A07F60077DCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE84F5F6285A07F60077DCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA6BCBC285A102C00261934 /* mp3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		CE84F5DC285A07F20077DCB9 = {
 			isa = PBXGroup;
 			children = (
+				CEA6BCBC285A102C00261934 /* mp3 */,
 				CE84F5E7285A07F20077DCB9 /* DrumPad */,
 				CE84F5E6285A07F20077DCB9 /* Products */,
 			);
@@ -128,6 +131,7 @@
 				CE84F5F5285A07F60077DCB9 /* LaunchScreen.storyboard in Resources */,
 				CE84F5F2285A07F60077DCB9 /* Assets.xcassets in Resources */,
 				CE84F5F0285A07F20077DCB9 /* Main.storyboard in Resources */,
+				CEA6BCBD285A102C00261934 /* mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

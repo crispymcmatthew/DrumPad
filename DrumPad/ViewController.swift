@@ -9,12 +9,42 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
-    var player : AVAudioPlayer!
+    
+    var drumPlayer : AVAudioPlayer!
+    var notePlayer : AVAudioPlayer!
+    var selectedInstrument: String = "grandPiano"
     
     @IBAction func keyPressed(_ sender: UIButton) {
-        print("Call here")
-        playSound()
+        switch sender.tag {
+        case 1:
+            playDrums("baseTrack")
+        /*case 2:
+            playDrums("track2")
+        case 3:
+            playDrums("track3")*/
+        case 4:
+            playNote("C3")
+        case 5:
+            playNote("D3")
+        case 6:
+            playNote("E3")
+        case 7:
+            playNote("F3")
+        case 8:
+            playNote("G3")
+        case 9:
+            playNote("A3")
+        case 10:
+            playNote("B3")
+        case 11:
+            playNote("C4")
+        case 15:
+            if let _ = drumPlayer {
+                drumPlayer.stop()
+            }
+        default:
+            print("Error: unknown")
+        }
     }
     
     override func viewDidLoad() {
@@ -23,27 +53,21 @@ class ViewController: UIViewController {
     }
 
 
-    func playSound() {
+    func playNote(_ sound: String) {
+        let repo = "mp3/" + selectedInstrument + "/" + sound
         
-        print("#####")
-        
-        guard let url = Bundle.main.url(forResource: "p", withExtension: "mp3") else {
+        guard let url = Bundle.main.url(forResource: repo, withExtension: "mp3") else {
             print("RETURNING ")
             return
         }
-        
         
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
             
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            notePlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             
-            /* iOS 10 and earlier require the following line:
-             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
-            
-            guard let player = player else { return }
+            guard let player = notePlayer else { return }
             
             player.play()
             
@@ -52,6 +76,29 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-
+    
+    func playDrums(_ track: String) {
+        let repo = "mp3/drums/" + track
+        
+        guard let url = Bundle.main.url(forResource: repo, withExtension: "wav") else {
+            print("RETURNING ")
+            return
+        }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            drumPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+            guard let player = drumPlayer else { return }
+            
+            player.play()
+            
+        } catch let error {
+            print("Error was detected")
+            print(error.localizedDescription)
+        }
+    }
 }
 
