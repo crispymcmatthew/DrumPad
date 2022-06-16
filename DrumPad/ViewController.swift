@@ -18,9 +18,9 @@ class ViewController: UIViewController {
         switch sender.tag {
         case 1:
             playDrums("baseTrack")
-        /*case 2:
+        case 2:
             playDrums("track2")
-        case 3:
+        /*case 3:
             playDrums("track3")*/
         case 4:
             playNote("C3")
